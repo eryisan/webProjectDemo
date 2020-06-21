@@ -54,7 +54,7 @@ select,input{
     position:absolute;
     right:0;
     top:29px;
-    background-color:orange;
+    /* background-color:orange; */
 }
 
 /* #nav 模块内样式-------------------------------------------------------------------------- */
@@ -353,4 +353,24 @@ select,input{
     letter-spacing: 2px;
 }
 
+.go-top{
+    display: block;
+    position: fixed;
+    right: 2px;
+    bottom: 2px;
+    z-index: 9;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    background: rgb(102, 102, 102) url(../img/icon-go-up.png) center no-repeat;
+  }
+  .go-top:hover{
+    background: rgb(102, 102, 102);
+  }
+  .go-top:hover:after{
+    content: '回到顶部';
+    display: block;
+    line-height: 20px;
+    text-align: center;
+  }
 
